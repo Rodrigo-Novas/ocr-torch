@@ -1,1 +1,1 @@
-web gunicorn -b :$PORT __main__:app
+web gunicorn -b :5000 __main__:app
