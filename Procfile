@@ -1,1 +1,1 @@
-web: uwsgi uwsgi.ini
+web gunicorn -b :$PORT __main__:app
