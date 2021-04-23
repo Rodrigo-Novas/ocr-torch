@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ocr-torch</title>
+        <link rel="icon" href="http://example.com/favicon.png">
+        <meta name="description" content="pagina incio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="..\static\css\bootstrap-grid.min.css">
+        <link rel="stylesheet" href="..\static\css\font-awesome.min.css">
+        <link rel="stylesheet" href="..\static\css\normalize.css">
+        <link rel="stylesheet" href="..\static\css\bootstrap.min.css">
+        <link rel="stylesheet" href="..\static\css\estilos.css?q=1280549780">
+    </head>
+    <body>
+            <header class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" id="maxim" href="{{ url_for('home') }}">Ocr Torch</a>
+                    <a class="navbar-brand" id="reduc" href="{{ url_for('home') }}">OT</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Otras paginas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://magic-flask.herokuapp.com/" target="_blank">Magic-Flask</a></li>
+                            <li><a class="dropdown-item" href="https://magicbase64.herokuapp.com/home" target="_blank">BASE-64</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="https://github.com/Rodrigo-Novas" target="_blank">Github</a></li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </header>
+
+            {% block content %}
+            {% endblock %}
+
+            <div class="footer-margin h-100">
+            
+            <footer class="card-footer bg-dark footer-font-style text-muted footer-position bg-gradient text-center">
+                <a class="btn btn-outline-light  m-1" href="mailto:novasr4516@gmail.com" role="button"
+                target="_blank"><i class="fa fa-paper-plane"></i
+                ></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-info  m-1" href="https://www.linkedin.com/in/rodrigo-novas-927057165/" role="button"
+                target="_blank"><i class="fa fa-linkedin"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-danger  m-1" href="https://github.com/Rodrigo-Novas" role="button"
+                target="_blank"><i class="fa fa-github"></i
+                ></a>
+                <!-- Twitter -->
+                <a class="btn btn-outline-primary  m-1" href="#!" role="button"
+                target="_blank"><i class="fa fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-success  m-1" href="#!" role="button"
+                target="_blank"><i class="fa fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-danger  m-1" href="#!" role="button"
+                target="_blank"><i class="fa fa-instagram"></i
+                ></a>
+            </footer>
+            </div>
+        <script src="..\static\js\popper.min.js"></script>
+        <script src="..\static\js\jquery-3.5.1.min.js"></script>
+        <script src="..\static\js\bootstrap.min.js"></script>
+    </body>
+</html>

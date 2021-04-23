@@ -1,0 +1,12 @@
+version: "3"
+
+services: 
+    web: 
+        build: .
+        ports:
+            - "5000:5000"
+        volumes: #de esta forma nos sirve para que al hacer algun cambio directamente lo construya sin necesidad de volverla a construir
+            - .:/home
+    redis:
+        image: "redis:alpine"
+        
