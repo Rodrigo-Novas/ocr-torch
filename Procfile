@@ -1,1 +1,1 @@
-web gunicorn -b :5000 __main__:app
+web: gunicorn __main__:app
